@@ -2,7 +2,7 @@ from google import genai
 import os
 
 
-client = genai.Client(api_key=os.getenv("AIzaSyBiv04AMD-C7Pp2YHp81EkHSJdbA-FRLFw"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 #Now, it will show the models supported by this API key
 models = client.models.list()
