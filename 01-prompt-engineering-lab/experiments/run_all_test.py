@@ -9,7 +9,6 @@ from utils.llm_client import ask_llm
 with open("prompts/base_input.txt", "r") as f:
     data = f.read()
 #zero_shot
-
 zero_shot_prompt = f"Summarize the following financial data:\n{data}"
 zero_shot_output = ask_llm(zero_shot_prompt)
 
@@ -28,7 +27,6 @@ Now analyze:
 few_shot_output = ask_llm(few_shot_prompt)
 
 #role_base_output
-
 role_base_prompt = f"""
 You are a senior financial analyst.
 
@@ -48,7 +46,6 @@ Output format:
 role_base_output = ask_llm(role_base_prompt)
 
 #automated_comparison_report_creation
-
 comparison_report = f"""
 # Prompt Comparison Report
 
@@ -64,8 +61,7 @@ comparison_report = f"""
 ## Conclusion
 Role-based prompting produced the most structured and reliable output.
 """
-
-# Save report
+#save it
 with open("results/comparison_report.md", "w") as f:
     f.write(comparison_report)
 
