@@ -54,8 +54,7 @@ The system generates:
 
 - Prompt design significantly impacts LLM performance  
 - Role-based prompting improves consistency  
-- Structured outputs reduce ambiguity  
-- Evaluation is critical for production AI systems
+- Structured outputs reduce ambiguity
 
 ## Run
 
